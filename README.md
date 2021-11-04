@@ -9,7 +9,7 @@ Sashimi Evil OctoBot Tentacle takes advantage of this feature to upload a malici
 
 ### Affected versions
 All OctoBot  versions until the latest version (0.4.0b12) are vulnerable.
-However, this exploit will work from version 0.4.0b3 until version 0.4.0b12.
+However, this exploit will work from version 0.4.0b3 until version 0.4.1.
 
 ### Proof of concept
 (PoC Tested on Octobot 0.4.0b10)
