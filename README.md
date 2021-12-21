@@ -3,7 +3,7 @@
 
 Sashimi Evil OctoBot Tentacle is a python script that exploits a vulnerability that lies in the Tentacles upload functionality of the cryptocurrency trading bot [OctoBot](https://octobot.online/) which is designed to be easy to use and customizable. Indeed, this open source trading bot has the particularity of offering to theirs users the possibility to upload their own trading algorithms.
 
-Sashimi Evil OctoBot Tentacle takes advantage of this feature to upload a malicious crafted package that leads to an arbitrary code execution.
+Sashimi Evil OctoBot Tentacle takes advantage of this feature to upload a malicious crafted package that leads to a remote code execution.
 
 ![Sahimi Evil OctoBot Tentacle](https://i.ibb.co/M26vLMM/Sashimi-octobot-killer.png)
 
