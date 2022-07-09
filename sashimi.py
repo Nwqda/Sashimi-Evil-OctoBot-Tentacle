@@ -1,11 +1,14 @@
 # -*- coding: utf-8 -*-
 
-# Author:   Naqwada (RuptureFarm 1029) <naqwada@pm.me>
-# License:  MIT License (http://www.opensource.org/licenses/mit-license.php)
-# Docs:     https://github.com/Naqwa/Sashimi-Evil-OctoBot-Tentacle
-# Website:  http://samy.link/
-# Linkedin: https://www.linkedin.com/in/samy-younsi/
-# Note:     FOR EDUCATIONAL PURPOSE ONLY.
+# Exploit Title: Sashimi Evil OctoBot Tentacle
+# Date: 9/2/2021
+# Exploit Author: Samy Younsi, Thomas Knudsen
+# Vendor Homepage: https://www.octobot.online/
+# Software Link: https://github.com/Drakkar-Software/OctoBot
+# Version: 0.4.0beta3 - 0.4.3
+# Tested on: Linux (Ubuntu, CentOs)
+# CVE : CVE-2021-36711
+
 
 from __future__ import print_function, unicode_literals
 from bs4 import BeautifulSoup
